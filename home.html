@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agung Prawinata  - Tech Lover</title>
+    <meta charset="utf-8" />
+    <meta lang="en" />
+    <meta name="author" content="Agung Prawinata" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="images/Iconslogo/rsz_logo_1-150x150.png" />
+    <!--The below code is for importing google web fonts in html-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide|Baloo+Tamma|Kelly+Slab|Neucha|Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/workslider.css" type="text/css" />
+    <script src="js/formValidate.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </head>
+  <style>
+    /*Internal CSS*/
+    #time {
+      float: right;
+      font-size: 30px;
+      margin: 10px;
+      font-family: "kelly slab";
+      margin-right: 20px;
+      font-weight: bold;
+    }
+    @media only screen and (max-width: 800px) {
+      #greet {
+        visibility: hidden;
+      }
+      #time {
+        margin: auto;
+        font-family: "kelly slab";
+      }
+    }
+    #greet {
+      font-size: 25px;
+      font-family: audiowide;
+      position: absolute;
+      left: 50%;
+      top: 2%;
+      font-weight: bold;
+    }
+
+    #center {
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+  <body>
+   
+
+    <!--Navigation Section-->
+    <div id="myNav" class="navbar">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNav()"
+        id="close"
+        >&times;</a
+      >
+      <div class="navbar-content">
+        <a href="#home" id="active">Home</a>
+        <a href="portofolio.html">Portofolio</a>
+        <a href="profil.html">Blog</a>
+        <a href="hubungi_saya.html">Contact</a>
+      </div>
+    </div>
+
+    <!--Banner Section-->
+    <div class="banner-area" id="#home">
+      <div class="title-image"></div>
+      <div class="title-name">
+        <p class="name">
+          <span id="iden-name"></span><br />
+          <span class="subtitle1" id="subtitle1">Tech Lover</span>
+          <span class="subtitle2" id="subtitle2"
+            >Web &nbsp;Developer</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <!--Services Section-->
+    <div class="service-area" id="services">
+      <div class="text-part">
+        <h1 id="center" >What can I do?</h1>
+        <div class="container">
+          <div class="box">
+            <div class="icon"></div>
+            <div class="content">
+              <h3>Website Development</h3>
+              <p>
+                Can design, and develop attractive, secure, fast, multi
+                functional and responsive websites for organization or
+                individuals according to users requirement.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+          
+              <div class="icon"></div>
+              <div class="content">
+                <h3>Domain & Hosting</h3>
+                <p>
+                  Having own hosting servers, we can provide ssd and cloud hosting
+                  for secure and fast websites and register your custom domain at
+                  minimal cost with 24/7 support.
+                </p>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!--Who do I work with, Section-->
+    <div class="corpwork-area" id="corpwork">
+      <div class="text-part">
+        <!--Aligning header to center using inline css-->
+        <h1 style="text-align: center">Who do I work with?</h1>
+        <center>
+          <div class="imgrel fade">
+            <img src="https://th.bing.com/th/id/R.d5d988dd5df197c3ef5d94ea927e280c?rik=dIwnF0dXryeh6g&riu=http%3a%2f%2f1.bp.blogspot.com%2f-zKF-PWRPkJo%2fU8TNoVT-GGI%2fAAAAAAAAARY%2fY4BeDFn2LSs%2fs1600%2fLogo%2bUniversitas%2bSriwiajaya%2bvector.jpg&ehk=C3DpT9Om69N4niJe44VkkvQ6DEvIPBVJgYFMqMsCFpE%3d&risl=&pid=ImgRaw&r=0" />
+            <p>Sriwijaya University</p>
+          </div>
+
+         
+
+          <div class="imgrel fade">
+            <img src="images/rumah.jpg" />
+            <p>Rumah coding</p>
+          </div>
+        </center>
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          
+        </div>
+      </div>
+    </div>
+
+    <!--About Section-->
+    <div class="about-area" id="about">
+      <div class="text-part-abt">
+        <h1 style="text-align: center; padding-bottom: 10px">
+          <span
+            style="
+              font-size: 80px;
+              text-decoration: none;
+              border-bottom: 2px solid rgb(179, 188, 14);
+              color: rgb(163, 230, 30);
+            "
+            >A</span
+          >bout Me
+        </h1>
+        <div class="about">
+          <div class="abt-content">
+            <div class="rem-part">
+              <div class="social-media">
+                <div class="icons">
+                  <a
+                    href="https://www.facebook.com"
+                    target="
+                            "
+                    ><img src="images/Iconslogo/facebook.png"
+                  /></a>
+                  <a href="https://twitter.com" target="_blank"
+                    ><img src="images/Iconslogo/twitter.png"
+                  /></a>
+                  <a
+                    href="https://www.instagram.com"
+                    target="_blank"
+                    ><img src="images/Iconslogo/instagram.png"
+                  /></a>
+                </div>
+              </div>
+              <div class="left-part">
+                <span class="h2"
+                  >I'm
+                  <span style="color: rgb(130, 244, 9)">Agung Prawinata</span></span
+                ><br />
+                <span class="h3">Developer & Programmer</span>
+                <hr />
+                <p style="font-size: 25px">
+                  I am Agung Prawinata, a student at Sriwijaya University, Faculty of Computer Science, majoring in Information Systems
+
+                  
+                  
+                  I was born in Palembang, April 28, 2003. So, this year I am 20 years old. I am currently studying at Sriwijaya University in the 4th semester majoring in Information Systems. I'm currently in Sibil class 2021.
+                </p>
+              </div>
+              <div class="abt-btn">
+                <button
+                  type="button"
+                  onclick="window.location.href='portofolio.html';"
+                  class="button1"
+                >
+                  View My CV
+                </button>
+                <button
+                  type="button"
+                  onclick="window.location.href='#portofolio.html';"
+                  class="button2"
+                >
+                  Hire Me
+                </button>
+              </div>
+            </div>
+            <div class="img-part">
+              <div class="img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Testimonial Section-->
+    
+    <div class="divider"></div>
+    <div class="contact-area" id="contact">
+      <div class="text-part">
+        <h1>Contact Me</h1>
+        <div class="cont-form">
+          <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Name *" /><br />
+            <input type="text" id="email" placeholder="Email *" />
+            <input type="text" id="subject" placeholder="Subject *" /><br />
+            <input
+              type="text"
+              placeholder="Phone No (Optional)"
+              id="phone"
+            /><br />
+            <textarea id="message" placeholder="Message *"></textarea><br />
+            <button type="submit" id="btn-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--This is for playing alert sound-->
+    <audio id="alert" src="sound/alerts.mp3" preload="auto"></audio>
+    <audio id="success" src="sound/success.mp3" preload="auto"></audio>
+
+    <div class="cta hide" id="goup">
+      <a href="home.html"><img src="images/Iconslogo/arrup.png" /></a>
+    </div>
+
+    <!--Copyright Information-->
+    <div class="copyright">
+      <p>
+        &copy; Created By
+        <a href="https://agung.com.">Agung Prawinata</a>
+      </p>
+    </div>
+    <script>
+      //handles goup button
+      myID = document.getElementById("goup");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "cta show";
+        } else {
+          myID.className = "cta hide";
+        }
+      };
+      window.addEventListener("scroll", myScrollFunc);
+
+      //The below line dynamically change the name in banner area.
+      document.getElementById("iden-name").innerHTML = "Agung Prawinata";
+
+      /*
+                The below code is used to slide/change image infinitely using for loop.
+                A single image will be available only for 2.5s and after that it automatically changes another image
+            */
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("imgrel");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2500);
+      }
+
+      //The below is used to make navigation bar sticky
+      //when we scroll up the navigation bar will stick on top of page
+      window.onscroll = function () {
+        stickFunction();
+      };
+      var navbar = document.getElementById("myNav");
+      var sticky = navbar.offsetTop;
+
+      function stickFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
